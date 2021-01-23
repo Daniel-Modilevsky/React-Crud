@@ -1,20 +1,17 @@
 .DeliveryList{
     margin-top: 7%;
-    width:35%;
+    width:40%;
     background-color: white;
-    height: 200px or auto;
-    margin-left: 25%;
-    border: 1px solid gray;
+    height: 82.2%;
+    margin-left: 25.5%;
     position: absolute;
     box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
     border-radius: 10px;
 }
 .Delivery{
-    border: 1px solid gray;
     padding: 5px;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: greenyellow;
     display: block;
 }
 .Delivery ul{
@@ -28,13 +25,13 @@
     margin-top: -1.5%;
     float: right;
     margin-right: 1.5%;
+    color: white;
+    background-color: #EE4D47;
 }
 .DeliveryForm{
     margin-left: 70%;
     position: absolute;
-    border: 1px solid gray;
     margin-top: 7%;
-    background-color:cadetblue;
     width: 20%;
     font-weight: bold;
 }
@@ -43,4 +40,46 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+}
+.DeliveryForm .formControl .TextField{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5%;
+    font-weight: bold;
+    background-color:white;
+    border: 1px solid #EE4D47;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
+    border-radius: 5px;
+}
+.DeliveryForm .formControl .TextField:hover{
+    border: 1px solid white;;
+}
+.DeliveryForm .formControl .MuiPickersUtilsProvider{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5%;
+}
+
+.DeliveryForm .formControl .saveButton{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    color: white;
+    background-color: #EE4D47;
+    border: 0;
+}
+.DeliveryForm .formControl .saveButton:hover{
+    color:  #EE4D47;
+    background-color:white;
+    transition: 0.3s;
+}
+.DeliveryForm .formControl .Select{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5%;
 }
