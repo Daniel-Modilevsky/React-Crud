@@ -1,0 +1,20 @@
+[
+    {
+        "index": 1,
+        "date" : "01.01.2021",
+        "fullName": "John Doe",
+        "city" :  "Tel Aviv"
+    },
+    {
+        "index": 2,
+        "date" : "05.01.2021",
+        "fullName": "John Doe",
+        "city" :  "Haifa"
+    },
+    {
+        "index": 3,
+        "date" : "06.01.2021",
+        "fullName": "John Doe",
+        "city" :  "Jerusalem"
+    }
+]

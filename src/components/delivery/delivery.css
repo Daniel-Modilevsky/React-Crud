@@ -1,0 +1,46 @@
+.DeliveryList{
+    margin-top: 7%;
+    width:35%;
+    background-color: white;
+    height: 200px or auto;
+    margin-left: 25%;
+    border: 1px solid gray;
+    position: absolute;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+}
+.Delivery{
+    border: 1px solid gray;
+    padding: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: greenyellow;
+    display: block;
+}
+.Delivery ul{
+    display: inline;
+}
+.Delivery ul li{
+    display: inline;
+    margin-right: 7%;
+}
+.Delivery .Fab{
+    margin-top: -1.5%;
+    float: right;
+    margin-right: 1.5%;
+}
+.DeliveryForm{
+    margin-left: 70%;
+    position: absolute;
+    border: 1px solid gray;
+    margin-top: 7%;
+    background-color:cadetblue;
+    width: 20%;
+    font-weight: bold;
+}
+
+.DeliveryForm .formControl{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
