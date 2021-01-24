@@ -51,11 +51,8 @@ class DeliveryList extends Component {
   deleteDelivery(index){
     console.log('delete');
     console.log(index);
-    // this.setState(prevState => ({
-    //     data: prevState.firstData.filter(el => el !== index )
-    // }));
-      const deliveties = this.state.firstData.filter(item => item.id !== index);
-      this.setState({ firstData: deliveties });
+    const deliveties = this.state.firstData.filter(item => item.index+1 !== index+1);
+    this.setState({ firstData: deliveties });
   }
   eachDelivety(item, index){
     return <Delivery key={index}>
