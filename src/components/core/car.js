@@ -47,12 +47,12 @@ function Car() {
             <path d="M103.347 327.98C103.347 322.859 106.272 318.958 109.684 318.958C113.341 318.958 116.022 323.103 116.266 327.98C116.266 333.101 113.341 337.003 109.928 337.003C106.272 337.003 103.347 332.857 103.347 327.98Z" fill="#8B8282"/>
             <defs>
             <linearGradient id="paint0_linear" x1="609.931" y1="-40.6307" x2="609.931" y2="297.04" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#F4A984"/>
-            <stop offset="1" stop-color="#EE4D47"/>
+            <stop stopColor="#F4A984"/>
+            <stop offset="1" stopColor="#EE4D47"/>
             </linearGradient>
             <linearGradient id="paint1_linear" x1="505.868" y1="-288.354" x2="505.868" y2="296.573" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#F4A984"/>
-            <stop offset="0.560769" stop-color="#EE4D47"/>
+            <stop stopColor="#F4A984"/>
+            <stop offset="0.560769" stopColor="#EE4D47"/>
             </linearGradient>
             </defs>
         </svg>
