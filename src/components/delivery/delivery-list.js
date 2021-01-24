@@ -30,15 +30,13 @@ class DeliveryList extends Component {
     this.eachDelivety = this.eachDelivety.bind(this);
     this.addDelivery = this.addDelivery.bind(this);
   };
-  addArray = ( deliveies) => {
-    this.setState({firstData : deliveies});
-  }
   addDelivery(delivery){
     delivery.index = this.state.firstData.length+1;
     console.log(`addDelivery - ${delivery.index}`);
-    let deliveries = this.state.firstData.push(delivery);
-    this.addArray(deliveries);
     console.log(delivery);
+    this.setState(
+      { firstData: [...this.state.firstData, delivery] }
+    )
   }
 
   updateDelivery(newDelivery, index){
@@ -52,10 +50,13 @@ class DeliveryList extends Component {
   }
   deleteDelivery(index){
     console.log('delete');
-    this.setState(prevState => ({
-      deliveries: prevState.firstData.filter( deliver => deliver.index !== index)
-    }))
-  };
+    console.log(index);
+    // this.setState(prevState => ({
+    //     data: prevState.firstData.filter(el => el !== index )
+    // }));
+      const deliveties = this.state.firstData.filter(item => item.id !== index);
+      this.setState({ firstData: deliveties });
+  }
   eachDelivety(item, index){
     return <Delivery key={index}>
       <ul>
@@ -64,7 +65,7 @@ class DeliveryList extends Component {
         <li>{item.fullName}</li>
         <li>{item.city}</li>
       </ul>
-      <Fab color="secondary" className="Fab" size="small" onClick={this.deleteDelivery}><DeleteIcon/></Fab>
+      <Fab color="secondary" className="Fab" size="small" onClick={this.deleteDelivery.bind(this, index)}><DeleteIcon/></Fab>
       <Fab color="primary" className="Fab" size="small" onClick={this.updateDelivery}> <CreateIcon/></Fab>
     </Delivery>
   };
